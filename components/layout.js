@@ -6,7 +6,8 @@ import Link from 'next/link'
 const name = 'Yohei Tsubuku'
 export const siteTitle = 'Yohei Tsubuku | Engineer Blog'
 
-export default function Layout({ children, home }) {
+export default function Layout(props) {
+  const { children, home } = props
   return (
     <div className={styles.container}>
       <Head>
